@@ -6,12 +6,12 @@ html, body {
     font-family: 'Arial', sans-serif;
     color: white;
   }
+  
   html {
     scroll-behavior: smooth; /* Enables smooth scrolling */
   }
   
   /* Navbar */
-  
   .nav-links a {
     position: relative;
     color: #5cc8ff;
@@ -39,7 +39,6 @@ html, body {
     text-decoration: none; /* Prevent default underline when hovering */
   }
   
-
   .logo-section {
     display: flex;
     flex-direction: column;
@@ -60,13 +59,6 @@ html, body {
     margin: 0;
   }
   
-  .nav-links a {
-    color: #5cc8ff;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 100px;
-  }
-
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -80,7 +72,6 @@ html, body {
     background-color: #1c2951; /* Ensure the background color remains */
   }
   
-  
   /* Hero Section */
   .hero {
     display: flex;
@@ -88,7 +79,6 @@ html, body {
     align-items: center;
     padding: 110px 0px;
     flex-wrap: wrap;
-    
   }
   
   .hero-text {
@@ -130,11 +120,11 @@ html, body {
   }
   
   .hero-image img {
-    max-width: 250px;
+    max-width: 300px;
     width: 100%;
-    border-radius: 36px;
     margin-right: 200px; /* This keeps the border radius intact */
   }
+  
   .about {
     padding: 40px 100px;
   }
@@ -149,27 +139,32 @@ html, body {
     margin-top: 0;
     font-size: 50px;
   }
-  .about-text p{
+  
+  .about-text p {
     padding-left: 100px;
- }
- .about-text {
+  }
+  
+  .about-text {
     text-indent: 40px;
     text-align: justify;
     line-height: 1.8;
   }
-
-  .Contact{
-    padding: 40px 150px;
-  }  
+  
+  .Contact {
+    padding: 40px 100px;
+  }
+  
   .contact-text h2 {
     color: #5cc8ff;
     margin-top: 0;
     font-size: 50px;
   }
+  
   .contact-text {
     padding: 20px;
     color: white;
   }
+  
   .contact-info {
     list-style: none;
     padding-left: 0;
@@ -177,7 +172,7 @@ html, body {
     justify-content: center;
     gap: 40px; /* Adds space between each item */
     font-size: 20px;
-    padding-top:90px;
+    padding-top: 90px;
     padding-bottom: 90px;
   }
   
@@ -192,8 +187,86 @@ html, body {
     font-size: 50px;
   }
   
+  /* Mobile Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
   
-
-
-
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+  
+    .hero {
+      flex-direction: column;
+      padding: 80px 20px;
+    }
+  
+    .hero-text {
+      max-width: 100%;
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .hero-text h2 {
+      font-size: 2rem;
+      padding-left: 0;
+    }
+  
+    .subtext {
+      padding-left: 0;
+      font-size: 16px;
+    }
+  
+    .download-btn {
+      margin-top: 30px;
+      margin-left: 0;
+      padding: 15px 40px;
+    }
+  
+    .hero-image img {
+      max-width: 100%;
+      margin-right: 0;
+    }
+  
+    .about {
+      padding: 20px 40px;
+    }
+  
+    .about-text p {
+      padding-left: 0;
+    }
+  
+    .contact-info {
+      flex-direction: column;
+      font-size: 16px;
+      gap: 20px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  
+    .contact-info li {
+      justify-content: center;
+    }
+  }
+  
+  /* Tablet Responsive Styles */
+  @media only screen and (max-width: 1024px) {
+    .hero {
+      padding: 100px 30px;
+    }
+  
+    .hero-text h2 {
+      font-size: 3rem;
+    }
+  
+    .subtext {
+      font-size: 18px;
+    }
+  }
   

@@ -22,12 +22,12 @@
   <main id="home" class="hero">
     <div class="hero-text">
       <h2>Check in, chill, and stay<br>for the thrill at<br><span>Peter’s Hotel!</span></h2>
-      <p class="subtext">"Lorem ipsum" is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content. It usually starts with</p>
-      <a href="#" class="download-btn">Download</a>
+      <p class="subtext">" A hotel that will melt away your tiredness and offer you the perfect escape from the hustle and bustle of daily life".</p>
+      <a href="javascript:void(0);" class="download-btn" onclick="downloadAPK()">Download App</a>
     </div>
     <div class="hero-image">
       <div class="mobile-frame">
-        <img src="MOBILEFRAME.png" alt="Phone App" />
+        <img src="MOBILE.png" alt="Phone App" />
       </div>
     </div>
   </main>
@@ -44,13 +44,31 @@
   <main id="contact" class="Contact">
     <div class="contact-text">
       <h2>Contact Us</h2>
-      <ul class="contact-info">
-        <li><i class="fas fa-envelope"></i> peterhotel@gmail.com</li>
-        <li><i class="fab fa-facebook"></i> facebook.com/petershotel</li>
-        <li><i class="fas fa-phone-alt"></i> +63 912 345 6789</li>
+      <ul class="contact-info" style="color: white;">
+        <li>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:peterhotel@gmail.com" style="color: white;">peterhotel@gmail.com</a> <!-- Clickable email link -->
+        </li>
+        <li>
+          <i class="fab fa-facebook"></i>
+          <a href="https://facebook.com/petershotel" target="_blank" style="color: white;">facebook.com/petershotel</a> <!-- Clickable Facebook link -->
+        </li>
+        <li>
+          <i class="fas fa-phone-alt"></i> +63 912 345 6789
+        </li>
       </ul>
     </div>
   </main>
+   
+  <script>
+    function downloadAPK() {
+        const link = document.createElement('a');
+        link.href = 'https://www.dropbox.com/scl/fi/w7efhm34hxoh1kybbxqw4/app-debug.apk?rlkey=ycleq3ohb6zdphinmgnxtqay7&st=k9xea87o&dl=1';  // Updated Dropbox link
+        link.download = 'PetersHotel.apk';  
+        link.click();
+    }
+</script>
+
   
 </body>
 </html>
