@@ -1,0 +1,199 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #1c2951;
+    font-family: 'Arial', sans-serif;
+    color: white;
+  }
+  html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+  }
+  
+  /* Navbar */
+  
+  .nav-links a {
+    position: relative;
+    color: #5cc8ff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 100px;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;  /* Adjust this distance to move the underline */
+    left: 0;
+    width: 0;
+    height: 2px;  /* Thickness of the underline */
+    background-color: #5cc8ff;
+    transition: width 0.3s ease;  /* Creates the loading effect */
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;  /* The underline expands to the full width on hover */
+  }
+  
+  .nav-links a:hover {
+    text-decoration: none; /* Prevent default underline when hovering */
+  }
+  
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-top: 5px;
+  }
+  
+  .site-name {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    color: #5cc8ff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 100px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    background-color: #1c2951; /* Ensure the background color remains */
+  }
+  
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 110px 0px;
+    flex-wrap: wrap;
+    
+  }
+  
+  .hero-text {
+    max-width: 50%;
+    padding-left: 60px;
+  }
+  
+  .hero-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 0 0px;
+    line-height: 1.4;
+    font-size: 55px;
+    padding-left: 100px;
+  }
+  
+  .hero-text span {
+    color: white;
+  }
+  
+  .subtext {
+    color: #5cc8ff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding-left: 100px;
+  }
+  
+  .download-btn {
+    display: inline-block;
+    background-color: #5cc8ff;
+    color: #000;
+    font-weight: bold;
+    padding: 20px 65px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  
+  .hero-image img {
+    max-width: 250px;
+    width: 100%;
+    border-radius: 36px;
+    margin-right: 200px; /* This keeps the border radius intact */
+  }
+  .about {
+    padding: 40px 100px;
+  }
+  
+  .about-text {
+    padding: 20px;
+    color: white;
+  }
+  
+  .about-text h2 {
+    color: #5cc8ff;
+    margin-top: 0;
+    font-size: 50px;
+  }
+  .about-text p{
+    padding-left: 100px;
+ }
+ .about-text {
+    text-indent: 40px;
+    text-align: justify;
+    line-height: 1.8;
+  }
+
+  .Contact{
+    padding: 40px 150px;
+  }  
+  .contact-text h2 {
+    color: #5cc8ff;
+    margin-top: 0;
+    font-size: 50px;
+  }
+  .contact-text {
+    padding: 20px;
+    color: white;
+  }
+  .contact-info {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adds space between each item */
+    font-size: 20px;
+    padding-top:90px;
+    padding-bottom: 90px;
+  }
+  
+  .contact-info li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info i {
+    color: #5cc8ff;
+    margin-right: 10px;
+    font-size: 50px;
+  }
+  
+  
+
+
+
+  
