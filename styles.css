@@ -146,11 +146,12 @@ html {
   color: white;
 }
 
-.contact-text h2 {
+.Contact h2 {
   color: #5cc8ff;
   margin-top: 0;
   font-size: 50px;
   text-align: left; 
+  padding-left: 50px;
 }
 
 
@@ -250,9 +251,15 @@ html {
     margin-right: 0;
     margin-bottom: 8px;
   }
-
-  /* Prevent wrapping for Contact Us heading */
-  .contact-text h2 {
-    white-space: nowrap; /* Ensure the text stays in one line */
+  .Contact h2{
+    color: #5cc8ff;
+    font-size: 30px;
+    padding-left: 30px;
   }
+  .about h2{
+    color: #5cc8ff;
+    font-size: 30px;
+    padding-left: 60px;
+  }
+  
 }
