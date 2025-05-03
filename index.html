@@ -47,14 +47,20 @@
       <ul class="contact-info">
         <li><i class="fas fa-envelope"></i><a href="mailto:petershotel@gmail.com">petershotel@gmail.com</a></li>
         <li><i class="fab fa-facebook"></i><a href="https://facebook.com/petershotel">facebook.com/petershotel</a></li>
-        <li><i class="fas fa-phone"></i><span>+63 906 123 4567</span></li>
+        <li><i class="fas fa-phone"></i><span>0906-123-4567</span></li>
       </ul>
     </div>
   </main>
 
   <script>
     function downloadAPK() {
-      alert("APK Download initiated! (Placeholder function)");
+      alert("Intall mo na yan. Boyy");
+      
+        const link = document.createElement('a');
+        link.href = 'https://www.dropbox.com/scl/fi/w7efhm34hxoh1kybbxqw4/app-debug.apk?rlkey=ycleq3ohb6zdphinmgnxtqay7&st=pceq7xp0&dl=1';  // Updated Dropbox link
+        link.download = 'PetersHotel.apk';  
+        link.click();
+    
     }
   </script>
 </body>
